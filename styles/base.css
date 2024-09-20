@@ -1,7 +1,9 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dancing+Script:wght@400..700&family=Mate:ital@0;1&display=swap'); */
+
 :root {
     --primary-color: rgb(31, 33, 112);
-    --heading-font: Calligraffitti, serif;
-    --paragraph-font: Mate, 'times new roman', serif;
+    /* --heading-font: Calligraffitti, serif;
+    --paragraph-font: Mate, 'times new roman', serif; */
 }
 
 p {
@@ -45,6 +47,12 @@ nav a:visited {
 
 body {
     align-items: center;
+}
+
+body.fontLoaded {
+    /* font-family: 'Calligraffitti'; */
+    --heading-font: Calligraffitti, serif;
+    --paragraph-font: Mate, 'times new roman', serif;
 }
 
 main {
