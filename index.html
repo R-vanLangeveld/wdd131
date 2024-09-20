@@ -8,11 +8,11 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ryndee van Langeveld">
     <meta name="author" content="Ryndee van Langeveld">
     <!-- Lighthouse told me to preload the fonts -->
-    <link rel="preload"
+    <!-- <link rel="preload"
         href='https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dancing+Script:wght@400..700&family=Mate:ital@0;1&display=swap'
-        as="style" onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')">
+        as="style" onload="this.onload=null; this.rel='stylesheet'; document.body.classList.add('fontLoaded')"> -->
 
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base.css" media="none" onload="if(media!='all')media='all'">
     <script src="scripts/getdates.js" defer></script>
 </head>
 

@@ -58,6 +58,8 @@ body {
     align-items: center;
 }
 
+/* body.fontLoaded {} */
+
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
