@@ -4,11 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Ryndee van Langeveld</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Ryndee van Langeveld">
+    <meta name="author" content="Ryndee van Langeveld">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - Ryndee</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Ryndee van Langeveld</h1>
+        <nav>
+            <a href="https://www.linkedin.com/feed/" title="LinkedIn">LinkedIn</a>
+            <a href="https://byui.instructure.com/" title="I-Learn">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/a-of-f/1?lang=eng&id=p4#p4"
+                title="Scripture">Scripture</a>
+            <a href="#" title="Final Project">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="A photo of Ryndee van Langeveld">
+
+            <p>My name is Ryndee. I was born in the USA and live in Utah. I am currently attending BYU-Idaho and working
+                on my Software Development Degree. I love to read, play computer games, solve puzzles, program, and play
+                with the family cats.
+            </p>
+            <h3>Utah, USA</h3>
+            <hr>
+            <div>
+                <figure>
+                    <img src="images/utah-flag.png" alt="The Utah state utah-flag">
+                    <figcaption><i>Official Flag of Utah</i></figcaption>
+                </figure>
+                <p>Utah is a western state of the United States of America. It has four seasons: Summer, Fall, Winter,
+                    and Spring. If you love snow, our mountatins are perfect for skiing or snowboarding. Utah also has
+                    wonderful trails to hike.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://freecodecamp.com" title="freecodecamp">freecodecamp</a></li>
+                <li><a href="https://w3schools.com" title="w3schools">W3 Schools</a></li>
+                <li><a href="https://udemy.com" title="Udemy">Udemy</a></li>
+                <li><a href="https://dev.to" title="DEV">DEV.to Community</a></li>
+                <li><a href="https://developer.mozilla.org" title="mdn web">mdn</a></li>
+            </ul>
+
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p id="full"></p>
+            <p id="short"></p>
+            <p id="medium"></p>
+        </div>
+        <p>&copy;<span id="currentyear"></span> Ryndee van Langeveld | Utah</p>
+        <p>Last Modification: <span id="modified"></span></p>
+    </footer>
 </body>
 
 </html>
