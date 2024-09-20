@@ -1,10 +1,19 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dancing+Script:wght@400..700&family=Mate:ital@0;1&display=swap'); */
+/* What you want me to do for the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dancing+Script:wght@400..700&family=Mate:ital@0;1&display=swap');
+
+
 
 :root {
+    font-family: Georgia, serif;
     --primary-color: rgb(31, 33, 112);
-    /* --heading-font: Calligraffitti, serif;
-    --paragraph-font: Mate, 'times new roman', serif; */
+    --heading-font: Calligraffitti, serif;
+    --paragraph-font: Mate, 'times new roman', serif;
 }
+
+/* .fonts-loaded {
+    font-family: Source Calligraffitti, serif;
+} */
+
 
 p {
     font-family: var(--paragraph-font);
@@ -47,12 +56,6 @@ nav a:visited {
 
 body {
     align-items: center;
-}
-
-body.fontLoaded {
-    /* font-family: 'Calligraffitti'; */
-    --heading-font: Calligraffitti, serif;
-    --paragraph-font: Mate, 'times new roman', serif;
 }
 
 main {
