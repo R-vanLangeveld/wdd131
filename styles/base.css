@@ -2,7 +2,6 @@
     --primary-color: rgb(31, 33, 112);
     --heading-font: Calligraffitti, serif;
     --paragraph-font: Mate, 'times new roman', serif;
-
 }
 
 p {
@@ -30,6 +29,7 @@ nav {
 
 nav a {
     color: aliceblue;
+    font-size: large;
     text-decoration: none;
 }
 
@@ -116,6 +116,7 @@ ul {
 
 li {
     margin: 5px 0;
+    font-size: large;
     text-align: left;
 }
 
