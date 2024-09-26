@@ -1,11 +1,19 @@
+:root {
+    --primary-color: rebeccapurple;
+    --heading-font: "Mate", serif;
+    --paragraph-font: "Roboto", sans-serif;
+}
+
+
 header {
-    background-color: rebeccapurple;
+    background-color: var(--primary-color);
     color: #fff;
+    height: 100px;
     padding: 25px 0px 5px 5px;
 }
 
 h1 {
-    font-family: "Mate", serif;
+    font-family: var(--heading-font);
     padding: 0 0 0 15px;
 }
 
@@ -28,7 +36,7 @@ h1 {
 }
 
 nav {
-    font-family: "Roboto", sans-serif;
+    font-family: var(--paragraph-font);
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
@@ -62,31 +70,26 @@ main {
 }
 
 h2 {
-    font-family: "Mate", serif;
+    font-family: var(--heading-font);
     text-align: center;
 }
 
-div {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
-
+div,
 figure {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--paragraph-font);
 }
 
 
 footer {
-    background-color: rebeccapurple;
+    background-color: var(--primary-color);
     padding: 15px 5px;
 }
 
 footer p {
-    font-family: "Mate", serif;
+    font-family: var(--paragraph-font);
     color: white;
     text-align: center;
     margin: 5px;
@@ -94,5 +97,5 @@ footer p {
 
 
 .highlight {
-    background-color: rebeccapurple;
+    background-color: var(--primary-color);
 }
