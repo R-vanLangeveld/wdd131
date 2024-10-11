@@ -1,0 +1,121 @@
+:root {
+    --primary-color: rebeccapurple;
+    --heading-font: "Mate", serif;
+    --paragraph-font: "Roboto", sans-serif;
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    min-height: 100px;
+    padding: 25px 0px 5px 5px;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    padding: 0 0 0 15px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: relative;
+    float: right;
+    bottom: 3.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "⨉";
+}
+
+nav {
+    font-family: var(--paragraph-font);
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: rgb(144, 73, 216);
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+
+main {
+    margin: 1rem auto;
+}
+
+h2,
+h3 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-family: var(--paragraph-font);
+    gap: 5px;
+}
+
+section {
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    width: 410px;
+}
+
+img {
+    margin: 1rem auto;
+    background-color: black;
+    animation: fade 15s;
+    width: 400px;
+    height: 250px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    padding: 15px 5px;
+}
+
+footer p {
+    font-family: var(--paragraph-font);
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+
+.highlight {
+    background-color: var(--primary-color);
+}
