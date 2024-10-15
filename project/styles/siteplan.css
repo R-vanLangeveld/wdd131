@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #663399;
+    --secondary-color: #f1ecce;
+    --hover-background-color: #9049d8;
+
+    --heading-font: "Mate", serif;
+    --paragraph-font: "Roboto", sans-serif;
+    --header-footer-font-color: #ffffff;
+}
+
+body {
+    font-family: var(--paragraph-font);
+}
+
+main {
+    margin: 1rem auto;
+    padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--header-footer-font-color);
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--header-footer-font-color);
+    position: relative;
+    float: right;
+    bottom: 2rem;
+}
+
+#menu::after {
+    content: " ⨉";
+}
+
+#menu.open::after {
+    content: " ☰";
+}
+
+.open {
+    display: block;
+}
+
+nav {
+    background-color: var(--primary-color);
+    font-size: 1.2rem;
+    display: none;
+}
+
+nav.wide {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--header-footer-font-color);
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: var(--hover-background-color);
+    text-decoration: underline;
+}
+
+img {
+    border: solid thin #000000;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--header-footer-font-color);
+    padding: 15px 5px;
+}
+
+footer p {
+    text-align: center;
+    margin: 5px;
+}

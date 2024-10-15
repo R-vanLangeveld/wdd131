@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="description of page using keywords">
+    <meta name="author" content="Ryndee van Langeveld">
+    <title>Site Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>WDD 131 Site Plan</h1>
+    </header>
+    <main>
+        <h2>Overview</h2>
+        <h3>Site Name</h3>
+        <p>Ryndee's Game Reviews</p>
+        <p>The reason I chose this name is because I wanted a site to share my thoughts on some of the games I have played.</p>
+        <h3>Purpose</h3>
+        <P>A place for me to share tips & tricks for Xbox 1, PlayStations 4 & 5, Nintendo Switch, and PC games that I
+            have played. <br>And receive suggestions for video games to review by visitors.</p>
+        <h3>Audience</h3>
+        <p>People looking for tips and tricks in video games</p>
+        <h3>Scenarios</h3>
+        <p>"Why haven't you played (non reviewed) game yet?" I don't own that game or it's one I haven't gotten around to playing yet.</p>
+        <p>"Can I sort through the games you've reviewed?" Yes, by price range and alphabetically.</p>
+
+        <h2>Style Guide</h2>
+        <h3>Color palette</h3>
+        <ul>
+            <li>primary-color #663399 Rebecca purple</li>
+            <li>secondary-color #f1ecce Cornsilk</li>
+            <li>hover-background-color #9049d8 Blue Violet</li>
+            <li>header-footer-font-color #ffffff White</li>
+        </ul>
+        <p>Palette URL: <a href="https://coolors.co/663399-9049d8-f1ecce" target="_blank"
+                rel="noreferrer">https://coolors.co/663399-9049d8-f1ecce</a></p>
+        <p>I will be using the secondary-color for the game review suggestion form</p>
+
+        <h3>Typography</h3>
+        <h4>Heading Font Names: Mate, serif</h4>
+        <p>Paragraph Font Names: Roboto, sans-serif</p>
+
+        <h3>Navigation</h3>
+        <h4>Widescreen Nav</h4>
+        <nav class="wide">
+            <a href="#">Home</a>
+            <a href="#">Xbox</a>
+            <a href="#">Switch</a>
+            <a href="#">PC</a>
+            <a href="#">PlayStation</a>
+        </nav>
+        <h4>Mobile Nav</h4>
+        <button id="menu">Navigation</button>
+        <nav id="mobilenav" class="open">
+            <a href="#">Home</a>
+            <a href="#">Xbox</a>
+            <a href="#">Switch</a>
+            <a href="#">PC</a>
+            <a href="#">PlayStation</a>
+        </nav>
+
+        <h3>Wireframes</h3>
+        <h4>Widescreen</h4>
+        <img src="images/widescreen-homepage-wireframe.png" alt="the wireframe for the widescreen view" loading="lazy">
+        <h4>Mobile</h4>
+        <img src="images/mobile-homepage-wireframe.png" alt="the wireframe for the mobile view" loading="lazy">
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Ryndee van Langeveld | Utah</p>
+        <p>Last Modification: <span id="modified"></span></p>
+    </footer>
+</body>
+
+</html>
