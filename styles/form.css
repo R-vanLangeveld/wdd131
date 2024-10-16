@@ -86,6 +86,13 @@ input[type="submit"] {
     box-shadow: 1px 1px 4px #999;
 }
 
+input:required {
+    border-right: solid 8px red;
+}
+
+input:required:valid {
+    border-right: solid 8px green;
+}
 
 footer {
     background-color: var(--primary-color);
