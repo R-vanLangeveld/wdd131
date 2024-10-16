@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+        content="The WDD131 W05 Assignment: 'Product Review Form' review page made by Ryndee van Langeveld">
+    <meta name="author" content="Ryndee van Langeveld">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <p>Thank You For Your Review</p>
+        <p id="visits"></p>
+        <!-- The form is here so no js errors occur.
+         Without the form "You have reviewed ${numVisits} products." or 
+         "You have reviewed your first product." wouldn't show up-->
+        <form id="rv">
+            <fieldset>
+                <select id="rv"></select>
+            </fieldset>
+            <input type="submit" id="submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Ryndee van Langeveld | Utah</p>
+        <p>Last Modification: <span id="modified"></span></p>
+    </footer>
+</body>
+
+</html>

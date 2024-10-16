@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+        content="The WDD131 W05 Assignment: 'Product Review Form' form page made by Ryndee van Langeveld">
+    <meta name="author" content="Ryndee van Langeveld">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label>Product Name
+                    <select name="productName" id="productName" required>
+                        <option value="" disabled selected>Choose a Product &#9662;</option>
+                    </select>
+                </label>
+                <div>Overall Rating
+                    <label><input type="radio" name="rating" value="oneStar" required>&star;</label>
+                    <label><input type="radio" name="rating" value="twoStar" required>&star;&star;</label>
+                    <label><input type="radio" name="rating" value="threeStar" required>&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="fourStar" required>&star;&star;&star;&star;</label>
+                    <label><input type="radio" name="rating" value="fiveStar"
+                            required>&star;&star;&star;&star;&star;</label>
+                </div>
+                <label>Date of Installation<input type="date" name="installationDate" required></label>
+                <div>What are the most useful features to you?
+                    <label><input type="checkbox" name="design" value="yes">Design</label>
+                    <label><input type="checkbox" name="durabillity" value="yes">Durabillity</label>
+                    <label><input type="checkbox" name="use" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                </div>
+                <label for="feedback">Written Review (optional)</label>
+                <textarea id="feedback" name="feedback" rows="4"></textarea>
+                <label>Your Name (optional)<input type="text" name="name" id="name"></label>
+            </fieldset>
+            <input type="submit" value="Post Review" id="submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Ryndee van Langeveld | Utah</p>
+        <p>Last Modification: <span id="modified"></span></p>
+    </footer>
+</body>
+
+</html>
