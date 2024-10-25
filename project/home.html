@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+        content="The home page of 'Ryndee's Game Reviews' containing info about the site and a form for visitors to suggest a game for me to review">
+    <meta name="author" content="Ryndee van Langeveld">
+    <title>Ryndee's Game Reviews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <button id="menu" title="Nav Menu">Navigation</button>
+        <nav>
+            <a href="home.html" title="Home">Home</a>
+            <a href="xbox.html" title="Xbox">Xbox</a>
+            <a href="switch.html" title="Switch">Switch</a>
+            <a href="pc.html" title="PC">PC</a>
+            <a href="playstation.html" title="PlayStation">PlayStation</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>Welcome to my website. My name is Ryndee and I like to play video games. I wanted a place to share my
+                thoughts on the games I've played. So here is where you will find all my opinions on games I've played
+                as well as what systems the games can be played on. Let me know if you have any game suggestions in the
+                form at the bottom of the page.</p>
+        </section>
+
+        <section>
+            <h2>Anticipated Questions</h2>
+            <h3>Why haven't you reviewed the game I requested?</h3>
+            <p>Here are some reasons</p>
+            <ul>
+                <li>I haven't gotten around to playing it</li>
+                <li>I'm not interested in it right now</li>
+                <li>I haven't seen the request</li>
+                <li>I don't have an account with that platform</li>
+                <li>I haven't played enough of it to make a good review</li>
+                <li>I'm busy with other things in life</li>
+            </ul>
+            <p>Please be patient with me</p>
+
+            <h3>What do you mean by "platform"?</h3>
+            <p>Is the PC game on Steam, Epic games, or something I don't know about so it isn't listed here? Please type
+                all the platforms the game is on when you request a game that can be played on a PC.
+            </p>
+
+            <h3>Will I receive credit if you review the game I requested?</h3>
+            <p>If you were the first person to request it. However, if the first person to request the game doesn't put
+                their name in the form, I will also give credit to the first person to put their name in the form.
+                <br>Example of how it will look: "Requested by: Anonymous, name"
+            </p>
+
+            <h3>Are there spoilers on this site?</h3>
+            <p>I will say if a game contains spoilers for another game, but I will not include any details about the
+                plot of any game.</p>
+        </section>
+
+        <form name="reviewRequest">
+            <fieldset>
+                <legend>Game review recommendation</legend>
+                <label>Game Name<input type="text" id="game" required></label>
+                <div class="checkbox">Device (check all that apply)
+                    <label><input type="checkbox" id="switch" name="switch" value="switch">Nintendo Switch</label>
+                    <label><input type="checkbox" id="pc" name="pc" value="pc">PC</label>
+                    <label><input type="checkbox" id="ps4" name="ps4" value="ps4">PS4</label>
+                    <label><input type="checkbox" id="ps5" name="ps5" value="ps5">PS5</label>
+                    <label><input type="checkbox" id="xbox1" name="xbox1" value="xbox1">Xbox One</label>
+                </div>
+                <label>Price Range in US Dollars
+                    <select name="price" id="price" required>
+                        <option value="" disabled selected>Choose a Price Range &#9662;</option>
+                        <option value="0">Free</option>
+                        <option value="0-5">5 or less</option>
+                        <option value="5-10">5 to 10</option>
+                        <option value="10-15">10 to 15</option>
+                        <option value="15-20">15 to 20</option>
+                        <option value="20-25">20 to 25</option>
+                        <option value="25-30">25 to 30</option>
+                        <option value="30-35">30 to 35</option>
+                        <option value="35-40">35 to 40</option>
+                        <option value="40-45">40 to 45</option>
+                        <option value="45-50">45 to 50</option>
+                        <option value="50-55">50 to 55</option>
+                        <option value="55-60">55 to 60</option>
+                        <option value="60+">Over 60</option>
+                    </select>
+                </label>
+                <label>Developer<input type="text" id="devs" required></label>
+                <label>Your Name (optional)<input type="text" id="name"></label>
+                <label>Platforms (optional)<input type="text" id="platform"></label>
+                <label for="reason">Reason (optional)</label>
+                <textarea name="reason" id="reason" rows="2"></textarea>
+            </fieldset>
+            <input type="submit" value="Send Review Request" id="submit" onclick="validateForm();">
+        </form>
+
+        <p class="hidden" id="sort">
+            <button id="standard">Default Order</button>
+            <button id="sortPrice">Sort By Price</button>
+            <button id="alphabetical">Sort By Name</button>
+        </p>
+        <div id="games"></div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Ryndee van Langeveld | Utah</p>
+        <p>Last Modification: <span id="modified"></span></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description"
+        content="The Xbox page of 'Ryndee's Game Reviews' containing info about the Xbox games I've reviewed">
+    <meta name="author" content="Ryndee van Langeveld">
+    <title>Ryndee's Game Reviews</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <button id="menu" title="Nav Menu">Navigation</button>
+        <nav>
+            <a href="home.html" title="Home">Home</a>
+            <a href="xbox.html" title="Xbox">Xbox</a>
+            <a href="switch.html" title="Switch">Switch</a>
+            <a href="pc.html" title="PC">PC</a>
+            <a href="playstation.html" title="PlayStation">PlayStation</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Xbox</h1>
+        <div class="sort">
+            <button id="standard">Default Order</button>
+            <button id="sortPrice">Sort By Price</button>
+            <button id="alphabetical">Sort By Name</button>
+        </div>
+
+        <p class="hidden">xbox</p>
+        <div id="games">
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Ryndee van Langeveld | Utah</p>
+        <p>Last Modification: <span id="modified"></span></p>
+    </footer>
+</body>
+
+</html>
